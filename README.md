@@ -17,7 +17,7 @@ Below is a Diagram Class I've drawned with draw.io:
 
 
 ## UML Javadoc
-As my project is a Maven project, you can open a **Git bash** at the Project's root and type the following command:
+As my project is a Maven project, you can open a **Git bash** at the Project's root and type the following command to generate Javadoc with UML graphs:
     
     mvn clean site
     
