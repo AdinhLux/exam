@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="151px" preserveAspectRatio="none" style="width:214px;height:151px;" version="1.1" viewBox="0 0 214 151" width="214px" zoomAndPan="magnify"><defs><filter height="300%" id="f4etfg35e92un" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class lu.uni.intro2prog.exam.task2--><a href="lu/uni/intro2prog/exam/task2/package-summary.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="lu/uni/intro2prog/exam/task2/package-summary.html" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f4etfg35e92un)" height="25.0938" id="lu.uni.intro2prog.exam.task2" style="stroke: #A80036; stroke-width: 1.5;" width="161" x="21" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="155" x="24" y="25.457">lu.uni.intro2prog.exam.task2</text></a><!--class lu.uni.intro2prog.exam.task2.drink--><a href="lu/uni/intro2prog/exam/task2/drink/package-summary.html" target="_top" xlink:actuate="onRequest" xlink:show="new" xlink:title="lu/uni/intro2prog/exam/task2/drink/package-summary.html" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f4etfg35e92un)" height="25.0938" id="lu.uni.intro2prog.exam.task2.drink" style="stroke: #A80036; stroke-width: 1.5;" width="191" x="6" y="93"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="185" x="9" y="110.457">lu.uni.intro2prog.exam.task2.drink</text></a><!--link lu.uni.intro2prog.exam.task2 to lu.uni.intro2prog.exam.task2.drink--><path d="M101.5,33.0408 C101.5,47.2076 101.5,71.3481 101.5,87.6046 " fill="none" id="lu.uni.intro2prog.exam.task2-lu.uni.intro2prog.exam.task2.drink" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="101.5,92.7897,105.5,83.7897,101.5,87.7897,97.5,83.7897,101.5,92.7897" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="190" x="12.5" y="138.3809">UMLDoclet 2.0.10, PlantUML 1.2019.08</text><!--
+@startuml
+    set namespaceSeparator none
+    hide circle
+    hide empty fields
+    hide empty methods
+
+    lu.uni.intro2prog.exam.task2 - -> lu.uni.intro2prog.exam.task2.drink
+
+    class "lu.uni.intro2prog.exam.task2" [[lu/uni/intro2prog/exam/task2/package-summary.html]] {
+    }
+    class "lu.uni.intro2prog.exam.task2.drink" [[lu/uni/intro2prog/exam/task2/drink/package-summary.html]] {
+    }
+
+    center footer UMLDoclet 2.0.10, PlantUML 1.2019.08
+@enduml
+
+PlantUML version 1.2019.08(Sat Jul 13 21:25:14 CEST 2019)
+(APACHE source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 9.0.4+11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

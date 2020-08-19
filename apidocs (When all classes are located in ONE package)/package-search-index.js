@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"lu.uni.intro2prog.exam.task1"},{"l":"lu.uni.intro2prog.exam.task2"}]
