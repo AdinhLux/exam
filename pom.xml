@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ~= Java Package name in .m2 repository -->
+    <groupId>lu.uni.intro2prog</groupId>
+    <!-- Released Product Name (.jar, .war) in .m2 repository -->
+    <artifactId>exam</artifactId>
+    <!-- Released Product package format -->
+    <packaging>jar</packaging>
+    <!-- Released Product (SNAPSHOT -> test, RELEASE -> production) -->
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!-- DEPENDENCIES TO IMPORT -->
+    <!-- ###################### -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+    <!-- BUILDING OPTIONS (using 'mvn package' 'mvn install' 'mvn deploy') -->
+    <!-- ################################################################# -->
+    <build>
+        <!-- FINAL Released Product Name -->
+        <finalName>OmsDrawEditor</finalName>
+        <plugins>
+            <!-- COMPILERS -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <!-- Tells Maven to use Java 8 (1.8) at least. Below is forbidden -->
+                    <!-- ============================================================ -->
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <!-- Print Compilation details -->
+                    <!-- ========================= -->
+                    <compilerArgs>-Xlint:all</compilerArgs>
+                    <!-- Display WARNING -->
+                    <!-- =============== -->
+                    <showWarnings>true</showWarnings>
+                    <!-- NOT Display VERBOSE (details) -->
+                    <!-- ============================= -->
+                    <verbose>false</verbose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <!-- REPORTING OPTIONS (using 'mvn site') -->
+    <!-- #################################### -->
+    <reporting>
+        <plugins>
+            <plugin>
+                <!-- MUST BE ADDED to use 'mvn site' -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.5</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>index</report>
+                            <report>project-team</report>
+                            <report>license</report>
+                            <report>mailing-list</report>
+                            <report>dependencies</report>
+                            <report>dependency-convergence</report>
+                            <report>plugin-management</report>
+                            <report>cim</report>
+                            <report>issue-tracking</report>
+                            <report>scm</report>
+                            <report>summary</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+
+            <!-- JAVADOC + UML (works with JDK 10, not 12) -->
+            <!-- ========================================= -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.1</version>
+
+                <configuration>
+                    <doclet>nl.talsmasoftware.umldoclet.UMLDoclet</doclet>
+                    <docletArtifact>
+                        <groupId>nl.talsmasoftware</groupId>
+                        <artifactId>umldoclet</artifactId>
+                        <version>2.0.10</version>
+                    </docletArtifact>
+                    <additionalOptions>
+                        <!-- additionalOption>
+                        </additionalOption -->
+                    </additionalOptions>
+
+                    <!-- Javadoc shows all classes and members -->
+                    <!-- ===================================== -->
+                    <show>private</show>
+
+                    <!-- To avoid BUILD FAILURE when generating Javadoc -->
+                    <!-- ============================================== -->
+                    <doclint>none</doclint>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </reporting>
+</project>
